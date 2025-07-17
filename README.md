@@ -31,6 +31,4 @@ Durante o desenvolvimento deste projeto, foram colocadas em prática as seguinte
 
 ## 📝 Como usar
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/discord-clone-dio.git
+1. Clone este repositório em seu computador.
