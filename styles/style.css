@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --font-principal: "Open Sans", sans-serif;
+    --fonte-secundaria: "Luckiest Guy", cursive;
+    --cor-branca: #FFFFFF;
+    --cor-preta:#000000;
+    --cor-cinza-escuro:#23272A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal);
+}
+
+@media screen and (max-width: 431px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 506px;
+        background-image: url("../assets/Header\ Background\ Mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--cor-branca);
+
+
+    }
+
+    .header h1{
+        width: 278px;
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 32px;
+        margin: 69px 126px 24px 24px;
+    }
+
+    .header p{
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0 23px 24px 24px ;
+    }
+
+    .header-botao{        
+        font-size: 16px;
+        color: var(--cor-preta);
+
+        border-radius: 28px;
+        text-decoration: none;
+    }
+
+    .download-windows{
+        background-color: var(--cor-branca);
+        padding: 16px 113.25px 16px 109.75px ;
+        margin: 0 23px 16px 24px;
+    }
+    
+    .abrir-navegador{
+        background-color: var(--cor-cinza-escuro);
+        color: var(--cor-branca);
+        padding: 15px 67.31px 15px 65.69px;
+        margin: 0 23px 0px 24px;
+    }
+
+    .main{
+        background-color: black;
+    }
+}
