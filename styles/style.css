@@ -13,6 +13,45 @@
     padding: 0;
 }
 
+@media screen and (min-width: 429px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../assets/Header\ Background\ PC.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--cor-branca);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header h1{
+        max-width: 313px;
+        font-family: var(--fonte-secundaria);
+        font-size: 56px;
+        font-weight: 400;
+        margin: 69px 0 24px 24px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .header p{
+        max-width: 757px;
+        font-size: 16px;
+        margin: 0 23px 24px 24px ;
+        text-align: center;
+    }
+
+    .header-botao{        
+        font-size: 16px;
+        color: var(--cor-preta);
+        border-radius: 28px;
+        text-decoration: none;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 429px){
 
     *{
@@ -20,16 +59,18 @@
         font-weight: 400;
     }
 
+    .header-botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
     .header{
         display: flex;
         flex-direction: column;
-
         background-image: url("../assets/Header\ Background\ Mobile.png");
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--cor-branca);
-
-
     }
 
     .header h1{
@@ -74,20 +115,19 @@
 
     .main-section{
         background-color: var(--cor-branca);
-        height: 428px;
     }
 
     .section-1{
         justify-content: center;
     }
 
-    .section-1 img {
+    .main-section img {
         max-width: 100%;
         padding: 40px 25px 27px 24px;
         box-sizing: border-box
     }
 
-    .section-1 h2 {
+    .main-section  h3 {
         box-sizing: border-box;
         font-weight: 800;
         font-size: 24px;
@@ -97,11 +137,29 @@
         word-wrap: break-word;
     }
 
-    .section-1 p{
+    .main-section  p{
         word-wrap: break-word;
         font-size: 16px;
         max-width: 100%;
         padding:0 26px 40px 24px;
         color: var(--cor-cinza-escuro);
+        box-sizing: border-box
+    }
+
+    .main-section h2{
+        word-wrap: break-word;
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 32px;
+        color: var(--cor-cinza-escuro);
+        margin: 40px 0 27px 24px;    
+    }
+
+    .footer{
+        display: flex;
+        background-color: var(--cor-cinza-escuro);
+        height: 140px;
+        justify-content: center;
+        align-items: center;
     }
 }
