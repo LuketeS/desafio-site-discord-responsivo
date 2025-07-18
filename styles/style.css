@@ -1,19 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-:root {
-    --fonte-principal: "Open Sans", sans-serif;
-    --fonte-secundaria: "Luckiest Guy", cursive;
-    --cor-branca: #FFFFFF;
-    --cor-preta:#000000;
-    --cor-cinza-escuro:#23272A;
-}
+    :root {
+        --fonte-principal: "Open Sans", sans-serif;
+        --fonte-secundaria: "Luckiest Guy", cursive;
+        --cor-branca: #FFFFFF;
+        --cor-preta:#000000;
+        --cor-cinza-escuro:#23272A;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+    *{
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
 
-@media screen and (min-width: 432px){
+    .header-botoes{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../assets/Header\ Background\ Mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--cor-branca);
+    }
+
+    .header h1{
+        max-width: 278px;
+        font-family: var(--fonte-secundaria);
+        font-size: 32px;
+        margin: 69px 0 24px 24px;
+        word-wrap: break-word;
+    }
+
+    .header p{
+        font-size: 16px;
+        margin: 0 23px 24px 24px ;
+    }
+
+    .header-botao{        
+        font-size: 16px;
+        color: var(--cor-preta);
+        border-radius: 28px;
+        text-decoration: none;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .download-windows{
+        background-color: var(--cor-branca);
+        padding: 16px 0;
+        margin: 0 23px 16px 24px;
+    }
+    
+    .abrir-navegador{
+        background-color: var(--cor-cinza-escuro);
+        color: var(--cor-branca);
+        padding: 15px 0;
+        margin: 0 23px 70px 24px;
+    }
+
+    .main-section{
+        background-color: var(--cor-branca);
+    }
+
+    .main-section img {
+        padding: 40px 25px 27px 24px;
+        box-sizing: border-box;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: auto; 
+    }
+
+    .main-section  h3 {
+        box-sizing: border-box;
+        font-weight: 800;
+        font-size: 24px;
+        color: var(--cor-cinza-escuro);
+        max-width: 100%;
+        padding: 27px 34px 27px 24px;        
+        word-wrap: break-word;
+    }
+
+    .main-section  p{
+        word-wrap: break-word;
+        font-size: 16px;
+        max-width: 100%;
+        padding:0 26px 40px 24px;
+        color: var(--cor-cinza-escuro);
+        box-sizing: border-box
+    }
+
+    .main-section h2{
+        word-wrap: break-word;
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 32px;
+        color: var(--cor-cinza-escuro);
+        margin: 40px 0 27px 24px;    
+    }
+
+    .main-section-img{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer{
+        display: flex;
+        background-color: var(--cor-cinza-escuro);
+        height: 140px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+@media screen and (min-width: 1024px){
 
     *{
         font-family: var(--fonte-principal);
@@ -174,117 +281,3 @@
 
 
 
-
-
-@media screen and (max-width: 431px){
-
-    *{
-        font-family: var(--fonte-principal);
-        font-weight: 400;
-    }
-
-    .header-botoes{
-        display: flex;
-        flex-direction: column;        
-    }
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        background-image: url("../assets/Header\ Background\ Mobile.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--cor-branca);
-    }
-
-    .header h1{
-        max-width: 278px;
-        font-family: var(--fonte-secundaria);
-        font-size: 32px;
-        margin: 69px 0 24px 24px;
-        word-wrap: break-word;
-    }
-
-    .header p{
-        font-size: 16px;
-        margin: 0 23px 24px 24px ;
-    }
-
-    .header-botao{        
-        font-size: 16px;
-        color: var(--cor-preta);
-        border-radius: 28px;
-        text-decoration: none;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .download-windows{
-        background-color: var(--cor-branca);
-        padding: 16px 0;
-        margin: 0 23px 16px 24px;
-    }
-    
-    .abrir-navegador{
-        background-color: var(--cor-cinza-escuro);
-        color: var(--cor-branca);
-        padding: 15px 0;
-        margin: 0 23px 70px 24px;
-    }
-
-    .main-section{
-        background-color: var(--cor-branca);
-    }
-
-    .main-section img {
-        padding: 40px 25px 27px 24px;
-        box-sizing: border-box;
-        object-fit: contain;
-        max-width: 100%;
-        max-height: auto; 
-    }
-
-    .main-section  h3 {
-        box-sizing: border-box;
-        font-weight: 800;
-        font-size: 24px;
-        color: var(--cor-cinza-escuro);
-        max-width: 100%;
-        padding: 27px 34px 27px 24px;        
-        word-wrap: break-word;
-    }
-
-    .main-section  p{
-        word-wrap: break-word;
-        font-size: 16px;
-        max-width: 100%;
-        padding:0 26px 40px 24px;
-        color: var(--cor-cinza-escuro);
-        box-sizing: border-box
-    }
-
-    .main-section h2{
-        word-wrap: break-word;
-        font-family: var(--fonte-secundaria);
-        font-weight: 400;
-        font-size: 32px;
-        color: var(--cor-cinza-escuro);
-        margin: 40px 0 27px 24px;    
-    }
-
-    .main-section-img{
-        display: flex;
-        justify-content: center;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .footer{
-        display: flex;
-        background-color: var(--cor-cinza-escuro);
-        height: 140px;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
