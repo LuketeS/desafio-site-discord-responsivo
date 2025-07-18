@@ -23,7 +23,6 @@
     .header{
         display: flex;
         flex-direction: column;
-        background-image: url("../assets/Header\ Background\ Mobile.png");
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--cor-branca);
@@ -53,15 +52,13 @@
 
     .download-windows{
         background-color: var(--cor-branca);
-        padding: 16px 0;
-        margin: 0 23px 16px 24px;
     }
     
     .abrir-navegador{
         background-color: var(--cor-cinza-escuro);
         color: var(--cor-branca);
-        padding: 15px 0;
-        margin: 0 23px 70px 24px;
+
+
     }
 
     .main-section{
@@ -119,6 +116,26 @@
         align-items: center;
     }
 
+    .main-section-img4{
+        display: flex;
+        justify-content: center;
+    }
+
+@media screen and (max-width:1024px){
+    .header{
+        background-image: url("../assets/Header\ Background\ Mobile.png");
+    }
+
+    .download-windows{
+        margin: 0 23px 16px 24px;
+        padding: 16px 0;
+    }
+    
+    .abrir-navegador{
+        margin: 0 23px 70px 24px;
+        padding: 15px 0;                
+    }
+}
 
 @media screen and (min-width: 1024px){
 
@@ -177,12 +194,16 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        text-align: center;
         gap: 16px;
     }
+
 
     .download-windows{
         background-color: var(--cor-branca);
         padding: 11px 24px 11px 23px;
+    
 
     }
     
@@ -190,6 +211,7 @@
         background-color: var(--cor-cinza-escuro);
         color: var(--cor-branca);
         padding: 11px 17px 11px 16px;
+
     }
 
 
@@ -238,10 +260,12 @@
 
     .main-section-text h3{
         margin-bottom: 16px;
+        padding: 10px 0 0 0;
     }
 
     .main-section-text p{
         font-size: 16px;
+        padding: 0 0 0 0;
     }
 
     .section-2{
@@ -271,7 +295,6 @@
         text-align: center;
         max-width: 85%;
     }
-
     
 }
 
