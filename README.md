@@ -2,6 +2,7 @@
 
 Este repositório contém a implementação de um desafio proposto pela [Digital Innovation One (DIO)](https://www.dio.me/) no Bootcamp Santander 2025 Front-end, onde o objetivo é recriar uma página do site [discord.com](https://discord.com/) utilizando **HTML** e **CSS**, com base em um layout fornecido no Figma https://www.figma.com/file/NRBYrG5d4DSzObv7dpTqoM/Desafio-Responsividade---DIO.
 
+Link do projeto no Pages: https://luketes.github.io/desafio-site-discord-responsivo/
 ## 📌 Desafio
 
 O desafio consiste em:
